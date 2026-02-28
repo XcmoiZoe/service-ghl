@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Course Funnel</title>
+
+<style>
+
+/* ===== RESET ===== */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background:#ffffff;
+  color:#111;
+  line-height:1.6;
+}
+
+:root {
+  --primary:#111;
+  --accent:#e63946;
+  --light:#f7f7f7;
+  --max:1100px;
+}
+
+.container {
+  width:90%;
+  max-width:var(--max);
+  margin:auto;
+  padding:80px 0;
+}
+
+.center { text-align:center; }
+
+.btn {
+  display:inline-block;
+  padding:16px 34px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:600;
+  transition:.3s;
+}
+
+.btn:hover { opacity:.85; }
+
+/* ===== HERO ===== */
+
+.hero {
+  background:#f4f4f4;
+  padding:120px 0;
+}
+
+.hero h1 {
+  font-size:48px;
+  max-width:800px;
+  margin:auto;
+  margin-bottom:25px;
+}
+
+.hero p {
+  font-size:20px;
+  color:#555;
+  margin-bottom:35px;
+}
+
+/* ===== AUTHORITY STRIP ===== */
+
+.authority {
+  background:#111;
+  color:#fff;
+  padding:20px 0;
+}
+
+.authority p {
+  text-align:center;
+  letter-spacing:1px;
+  font-size:14px;
+}
+
+/* ===== PROBLEM SECTION ===== */
+
+.problem {
+  background:#fff;
+}
+
+.problem h2 {
+  margin-bottom:25px;
+}
+
+.problem-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.problem-box {
+  background:#f8f8f8;
+  padding:30px;
+  border-radius:8px;
+}
+
+/* ===== TRANSFORMATION ===== */
+
+.transformation {
+  background:#f4f4f4;
+}
+
+.transformation h2 {
+  margin-bottom:25px;
+}
+
+.transformation ul {
+  list-style:none;
+}
+
+.transformation li {
+  margin-bottom:15px;
+  padding-left:20px;
+  position:relative;
+}
+
+.transformation li::before {
+  content:"✓";
+  position:absolute;
+  left:0;
+  color:var(--accent);
+}
+
+/* ===== VALUE STACK ===== */
+
+.value {
+  background:#fff;
+}
+
+.value-card {
+  background:#111;
+  color:#fff;
+  padding:40px;
+  border-radius:10px;
+  text-align:center;
+}
+
+.value-card h3 {
+  margin-bottom:20px;
+}
+
+.value-card .price {
+  font-size:36px;
+  margin:20px 0;
+}
+
+/* ===== GUARANTEE ===== */
+
+.guarantee {
+  background:#f7f7f7;
+  text-align:center;
+}
+
+.guarantee p {
+  max-width:700px;
+  margin:auto;
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials {
+  background:#fff;
+}
+
+.testimonial-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.testimonial {
+  background:#f8f8f8;
+  padding:25px;
+  border-radius:8px;
+}
+
+/* ===== FINAL CTA ===== */
+
+.final-cta {
+  background:#111;
+  color:#fff;
+  padding:100px 0;
+}
+
+.final-cta h2 {
+  margin-bottom:25px;
+}
+
+@media (max-width:768px){
+  .hero h1 { font-size:32px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container center">
+    <h1>Build a Skill That Commands Premium Pricing</h1>
+    <p>Stop undercharging. Stop guessing. Build a structured system that increases your income with confidence.</p>
+    <a href="#join" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- AUTHORITY STRIP -->
+<section class="authority">
+  <div class="container">
+    <p>Trusted by 500+ Students • Proven Framework • Lifetime Access</p>
+  </div>
+</section>
+
+<!-- PROBLEM -->
+<section class="problem">
+  <div class="container">
+    <h2 class="center">Why Most Professionals Stay Undervalued</h2>
+    <div class="problem-grid">
+      <div class="problem-box">
+        <h3>No Structured Learning</h3>
+        <p>Jumping between YouTube tutorials without clear progression.</p>
+      </div>
+      <div class="problem-box">
+        <h3>Underpricing</h3>
+        <p>Charging low rates due to lack of positioning confidence.</p>
+      </div>
+      <div class="problem-box">
+        <h3>No Client Strategy</h3>
+        <p>Relying on random inquiries instead of predictable systems.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRANSFORMATION -->
+<section class="transformation">
+  <div class="container">
+    <h2 class="center">What You Will Master</h2>
+    <ul>
+      <li>Premium Skill Development Framework</li>
+      <li>High-Ticket Pricing Strategy</li>
+      <li>Client Attraction System</li>
+      <li>Portfolio Positioning</li>
+      <li>Brand Authority Building</li>
+    </ul>
+  </div>
+</section>
+
+<!-- VALUE STACK -->
+<section class="value">
+  <div class="container">
+    <div class="value-card">
+      <h3>Full Program Access</h3>
+      <p>Includes all modules, bonus workshops, and private community.</p>
+      <div class="price">$1,497</div>
+      <a href="#join" class="btn">Secure Your Spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- GUARANTEE -->
+<section class="guarantee">
+  <div class="container">
+    <h2>30-Day Performance Guarantee</h2>
+    <p>If you complete the modules and implement the framework, and don’t see measurable improvement, you’re covered.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container center">
+    <h2>Results From Real Students</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"I increased my pricing by 60% within 2 months."</p>
+        <strong>- Laura P.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"Finally structured my business properly."</p>
+        <strong>- Megan T.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"The best investment in my professional growth."</p>
+        <strong>- Danielle R.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final-cta" id="join">
+  <div class="container center">
+    <h2>Ready to Elevate Your Income?</h2>
+    <a href="#" class="btn">Enroll Today</a>
+  </div>
+</section>
+
+</body>
+</html>

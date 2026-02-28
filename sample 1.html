@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>High Ticket Course Funnel</title>
+
+<style>
+
+/* ===== GLOBAL RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f9f9f9;
+}
+
+:root {
+  --primary: #e63946;
+  --dark: #1d1d1d;
+  --light: #ffffff;
+  --accent: #f4a261;
+  --max-width: 1100px;
+}
+
+/* ===== UTILITIES ===== */
+
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 60px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: var(--primary);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 40px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #c92f3b;
+}
+
+/* ===== HERO ===== */
+
+.hero {
+  background: linear-gradient(135deg, #fff, #f5f5f5);
+  padding: 80px 0;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* ===== OFFER SECTION ===== */
+
+.offer {
+  background: #fff;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+}
+
+.offer ul {
+  list-style: none;
+}
+
+.offer li {
+  margin-bottom: 15px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.offer li::before {
+  content: "✓";
+  color: var(--primary);
+  position: absolute;
+  left: 0;
+}
+
+.price-box {
+  background: var(--dark);
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.price-box h2 {
+  margin-bottom: 15px;
+}
+
+.price-box .price {
+  font-size: 32px;
+  margin: 20px 0;
+}
+
+/* ===== BONUS SECTION ===== */
+
+.bonus {
+  background: #fdf3f4;
+}
+
+.bonus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.bonus-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+/* ===== CONTENT SECTIONS ===== */
+
+.section h2 {
+  margin-bottom: 20px;
+}
+
+.section p {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* ===== TESTIMONIALS ===== */
+
+.testimonials {
+  background: #fff;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 30px;
+}
+
+.testimonial {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* ===== FAQ ===== */
+
+.faq {
+  background: #fff;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h4 {
+  margin-bottom: 8px;
+}
+
+/* ===== CTA SECTION ===== */
+
+.cta {
+  background: var(--dark);
+  color: #fff;
+  padding: 80px 0;
+}
+
+.cta h2 {
+  margin-bottom: 20px;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 900px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container center">
+    <h1>Skill That Pays You What You're Worth</h1>
+    <p>Turn your passion into a high-income career with a structured, proven training system.</p>
+    <a href="#enroll" class="btn">Enroll Now</a>
+  </div>
+</section>
+
+<!-- OFFER -->
+<section class="offer">
+  <div class="container offer-grid">
+    <div>
+      <h2>What You Get Inside</h2>
+      <ul>
+        <li>Complete Step-by-Step Training</li>
+        <li>Beginner to Advanced Modules</li>
+        <li>Client Acquisition Strategy</li>
+        <li>Business Pricing Framework</li>
+        <li>Lifetime Access</li>
+      </ul>
+    </div>
+    <div class="price-box">
+      <h2>Full Course Access</h2>
+      <p class="price">$997</p>
+      <a href="#enroll" class="btn">Secure Your Spot</a>
+    </div>
+  </div>
+</section>
+
+<!-- BONUS -->
+<section class="bonus">
+  <div class="container center">
+    <h2>FREE Bonus Kit (Worth $5,000+)</h2>
+    <div class="bonus-grid">
+      <div class="bonus-card">
+        <h3>Exclusive Templates</h3>
+        <p>Proven scripts, pricing sheets, and client onboarding systems.</p>
+      </div>
+      <div class="bonus-card">
+        <h3>Advanced Workshop</h3>
+        <p>Specialized masterclass to help you command premium pricing.</p>
+      </div>
+    </div>
+    <br>
+    <a href="#enroll" class="btn">Get Instant Access</a>
+  </div>
+</section>
+
+<!-- WHAT YOU'LL LEARN -->
+<section class="section">
+  <div class="container center">
+    <h2>What You'll Learn</h2>
+    <p>Master the technical skills, branding, pricing psychology, and client communication.</p>
+    <p>Build authority in your niche and create predictable income streams.</p>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials">
+  <div class="container center">
+    <h2>Over 500+ Students Transformed</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p>"This course changed my business completely."</p>
+        <strong>- Sarah M.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"I doubled my income in 3 months."</p>
+        <strong>- Jessica L.</strong>
+      </div>
+      <div class="testimonial">
+        <p>"The best investment I made in myself."</p>
+        <strong>- Amanda K.</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2 class="center">Frequently Asked Questions</h2>
+    <div class="faq-item">
+      <h4>Do I need prior experience?</h4>
+      <p>No, this course is structured from beginner to advanced.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Is there lifetime access?</h4>
+      <p>Yes, you’ll have unlimited access to all modules.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta" id="enroll">
+  <div class="container center">
+    <h2>Ready to Start Your Transformation?</h2>
+    <a href="#" class="btn">Enroll Today</a>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elite Program Application</title>
+
+<style>
+
+/* RESET */
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: Arial, sans-serif;
+  background:#0f0f0f;
+  color:#fff;
+  line-height:1.6;
+}
+
+:root {
+  --accent:#e63946;
+  --max:1000px;
+}
+
+.container {
+  width:90%;
+  max-width:var(--max);
+  margin:auto;
+  padding:100px 0;
+}
+
+.center { text-align:center; }
+
+.btn {
+  display:inline-block;
+  padding:16px 36px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:50px;
+  font-weight:bold;
+  transition:.3s;
+}
+
+.btn:hover { opacity:.85; }
+
+/* HERO */
+
+.hero {
+  text-align:center;
+  padding:120px 0;
+}
+
+.hero h1 {
+  font-size:46px;
+  margin-bottom:25px;
+}
+
+.hero p {
+  font-size:20px;
+  color:#ccc;
+  margin-bottom:40px;
+}
+
+/* AUTHORITY STRIP */
+
+.authority {
+  background:#1a1a1a;
+  padding:20px 0;
+  text-align:center;
+  font-size:14px;
+  letter-spacing:1px;
+  color:#bbb;
+}
+
+/* BENEFITS */
+
+.benefits {
+  background:#141414;
+}
+
+.benefits-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.benefit-box {
+  background:#1f1f1f;
+  padding:30px;
+  border-radius:10px;
+}
+
+/* APPLICATION FORM */
+
+.form-section {
+  background:#0f0f0f;
+}
+
+form {
+  max-width:600px;
+  margin:auto;
+  background:#1a1a1a;
+  padding:40px;
+  border-radius:12px;
+}
+
+form h2 {
+  margin-bottom:25px;
+  text-align:center;
+}
+
+form input,
+form textarea,
+form select {
+  width:100%;
+  padding:14px;
+  margin-bottom:20px;
+  border:none;
+  border-radius:6px;
+  background:#2a2a2a;
+  color:#fff;
+}
+
+form button {
+  width:100%;
+  padding:16px;
+  background:var(--accent);
+  border:none;
+  border-radius:50px;
+  color:#fff;
+  font-size:16px;
+  cursor:pointer;
+}
+
+form button:hover { opacity:.85; }
+
+/* FINAL NOTE */
+
+.note {
+  text-align:center;
+  padding:60px 0;
+  color:#aaa;
+  font-size:14px;
+}
+
+@media (max-width:768px){
+  .hero h1 { font-size:32px; }
+}
+
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>Private Mentorship Program</h1>
+    <p>This program is not for everyone. We only work with serious professionals ready to scale.</p>
+    <a href="#apply" class="btn">Apply Now</a>
+  </div>
+</section>
+
+<!-- AUTHORITY -->
+<section class="authority">
+  Trusted by 500+ Clients • Selective Enrollment • Limited Slots
+</section>
+
+<!-- BENEFITS -->
+<section class="benefits">
+  <div class="container">
+    <div class="benefits-grid">
+      <div class="benefit-box">
+        <h3>Premium Positioning</h3>
+        <p>Learn how to command high-ticket pricing confidently.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Client Acquisition System</h3>
+        <p>Build predictable lead generation pipelines.</p>
+      </div>
+      <div class="benefit-box">
+        <h3>Direct Guidance</h3>
+        <p>Structured roadmap with accountability support.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- APPLICATION FORM -->
+<section class="form-section" id="apply">
+  <div class="container">
+    <form>
+      <h2>Apply for Enrollment</h2>
+
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <input type="text" placeholder="Current Profession">
+
+      <select required>
+        <option value="">Monthly Income Range</option>
+        <option>$0 - $2,000</option>
+        <option>$2,000 - $5,000</option>
+        <option>$5,000+</option>
+      </select>
+
+      <textarea rows="4" placeholder="Why should we select you?"></textarea>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+<!-- NOTE -->
+<section class="note">
+  If approved, you will receive an email within 24–48 hours with next steps.
+</section>
+
+</body>
+</html>
